@@ -1,11 +1,15 @@
-// logical operators - OR || and AND &&
+// variables and block scope
+const ag = 30;
 
-
-const password = 'p@ss';
-if(password.length >= 12 && ){
-    console.log('that password is mighty strong');
-} else if (password.length >= 8){
-    console.log('that password is long enough!');
-} else {
-    console.log('password is not long enough');
+if(true){
+    const age = 40;
+    const name = 'shaun';
+    console.log('inside 1st code block: ', age, name);
+    
+    if(true){
+        const age = 50;
+        console.log('inside 1st code block: ', age);
+    }
 }
+
+console.log('outside code block: ', age, name, test);
